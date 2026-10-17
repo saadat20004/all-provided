@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Provided Camping | Glamping near Mount Rainier, Ashford WA</title>
+<meta name="description" content="Fully set up tent camping 15 minutes from Mount Rainier's Nisqually Entrance. 12 sites on 17 wooded acres in Ashford, Washington. Just bring food and ice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --fir:#16221a; --forest:#253628; --moss:#5d6c44; --sage:#a9b48f;
+  --canvas:#f3ede1; --paper:#fbf8f2; --white:#fff;
+  --amber:#e8a23d; --ember:#c9652a; --bark:#5a4130;
+  --ink:#1c211d; --muted:#666c62; --line:#e2d9c8;
+  --r-lg:22px; --r-md:14px; --r-sm:10px;
+  --shadow:0 18px 40px -18px rgba(22,34,26,.35);
+  --ease:cubic-bezier(.22,.7,.2,1);
+  --head:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Instrument Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3,h4{font-family:var(--head);line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:800}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--moss)}
+.eyebrow i{color:var(--ember)}
+.sec{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head p{max-width:460px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;border:2px solid transparent;cursor:pointer;transition:transform .3s var(--ease),background .3s,color .3s,box-shadow .3s,border-color .3s}
+.btn-amber{background:var(--amber);color:var(--fir)}
+.btn-amber:hover{background:var(--ember);color:#fff;transform:translateY(-2px);box-shadow:0 12px 24px -10px rgba(201,101,42,.6)}
+.btn-line{border-color:var(--fir);color:var(--fir)}
+.btn-line:hover{background:var(--fir);color:var(--canvas)}
+.btn-dark{background:var(--fir);color:var(--canvas)}
+.btn-dark:hover{background:var(--forest);transform:translateY(-2px)}
+
+/* reveal */
+body{opacity:0;transition:opacity .7s var(--ease)}
+body.ready{opacity:1}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+img.fi{opacity:0;transition:opacity .9s var(--ease),transform 1.2s var(--ease)}
+img.fi.ld{opacity:1}
+a,button,input,select,textarea,.site,.icard,.rcard{transition-timing-function:var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+.nav.solid{background:rgba(251,248,242,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line);padding:10px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{width:42px;height:42px;border-radius:12px;background:var(--fir);color:var(--amber);display:grid;place-items:center;font-size:1.1rem;transition:transform .4s var(--ease)}
+.logo:hover .logo-mark{transform:rotate(-8deg)}
+.logo b{font-family:var(--head);font-size:1.15rem;display:block;line-height:1}
+.logo small{font-size:.72rem;color:var(--muted);letter-spacing:.06em}
+.nav-links{display:flex;gap:30px;font-weight:500;font-size:.95rem}
+.nav-links a{position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--ember);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--white);cursor:pointer;font-size:1.1rem}
+.mob-menu{position:fixed;inset:0;z-index:60;background:var(--fir);color:var(--canvas);display:flex;flex-direction:column;padding:26px 24px;transform:translateY(-100%);transition:transform .5s var(--ease)}
+.mob-menu.open{transform:none}
+.mob-menu .top{display:flex;justify-content:space-between;align-items:center}
+.mob-menu .close{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:none;color:var(--canvas);font-size:1.2rem;cursor:pointer}
+.mob-menu nav{display:flex;flex-direction:column;gap:6px;margin-top:40px}
+.mob-menu nav a{font-family:var(--head);font-size:2rem;font-weight:800;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.mob-menu .btn{margin-top:auto}
+
+/* HERO */
+.hero{background:var(--canvas);padding:108px 0 46px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:48px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.4rem,4.4vw,3.7rem);font-weight:800;margin:14px 0 18px}
+.hero h1 em{font-style:normal;color:var(--ember);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;background:var(--amber);opacity:.35;border-radius:4px;z-index:-1}
+.hero-lead{font-size:1.06rem;color:#454b43;max-width:500px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 22px}
+.proof{display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-size:.92rem}
+.proof .stars{color:var(--amber)}
+.proof span{display:flex;align-items:center;gap:7px}
+.proof .dot{width:4px;height:4px;border-radius:50%;background:var(--sage)}
+.mosaic{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:200px 200px;gap:14px;position:relative}
+.mosaic figure{border-radius:var(--r-lg);overflow:hidden;position:relative}
+.mosaic figure:first-child{grid-row:span 2}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.mosaic figure:hover img{transform:scale(1.07)}
+.packcard{position:absolute;left:-40px;bottom:-22px;background:var(--white);border-radius:var(--r-md);padding:18px 20px;box-shadow:var(--shadow);width:230px;animation:float 6s ease-in-out infinite}
+.packcard h4{font-size:1rem;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.packcard h4 i{color:var(--ember)}
+.packcard li{list-style:none;display:flex;align-items:center;gap:10px;font-size:.92rem;padding:4px 0}
+.packcard li i{color:var(--moss);opacity:0;transform:scale(.4);transition:all .4s var(--ease)}
+.packcard.go li i{opacity:1;transform:none}
+.packcard.go li:nth-child(2) i{transition-delay:.25s}
+.packcard.go li:nth-child(3) i{transition-delay:.5s}
+.packcard.go li:nth-child(4) i{transition-delay:.75s}
+.packcard p{font-size:.78rem;color:var(--muted);margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* quick bar */
+.quick{position:relative;z-index:5;margin-top:44px}
+.quick form{background:var(--white);border-radius:var(--r-lg);box-shadow:var(--shadow);display:grid;grid-template-columns:1.5fr 1fr 1fr .8fr auto;align-items:center;padding:10px}
+.qf{padding:10px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;gap:4px;min-height:62px}
+.qf:nth-last-child(2){border-right:none}
+.qf label{line-height:1;height:14px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;gap:6px;align-items:center}
+.qf label i{color:var(--ember);width:14px;text-align:center}
+.qf select,.qf input{border:none;background:none;padding:2px 0;height:28px;font-weight:600;font-size:1rem;width:100%;cursor:pointer}
+.qf select:focus,.qf input:focus{outline:none}
+.qf:focus-within{background:var(--canvas);border-radius:var(--r-sm)}
+.quick .btn{border-radius:var(--r-md);white-space:nowrap;height:58px;margin-left:6px}
+
+/* stats */
+.stats{background:var(--fir);color:var(--canvas);padding:70px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.stat{border-left:1px solid rgba(255,255,255,.14);padding-left:20px}
+.stat b{font-family:var(--head);font-size:clamp(2rem,3.4vw,2.8rem);font-weight:800;color:var(--amber);display:block;line-height:1.05}
+.stat > span{font-size:.92rem;opacity:.8;display:block;margin-top:4px}
+.stat b small{font-size:.48em;font-weight:700;margin-left:5px;color:var(--canvas);opacity:.85;letter-spacing:0}
+
+/* included */
+.incl-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.incl-photo{position:sticky;top:100px;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5}
+.incl-photo img{width:100%;height:100%;object-fit:cover}
+.incl-photo .tag{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(22,34,26,.82);backdrop-filter:blur(6px);color:var(--canvas);padding:18px;border-radius:var(--r-md)}
+.incl-photo .tag b{font-family:var(--head);font-size:1.3rem;display:block}
+.bring{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 34px}
+.bring span{background:var(--canvas);border:1.5px dashed var(--bark);padding:9px 16px;border-radius:999px;font-weight:600;display:flex;gap:8px;align-items:center}
+.bring span i{color:var(--ember)}
+.incl-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.icard{background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);padding:24px;transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+.icard:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.icard .ic{width:46px;height:46px;border-radius:12px;background:var(--canvas);color:var(--ember);display:grid;place-items:center;font-size:1.15rem;margin-bottom:14px;transition:background .3s,color .3s}
+.icard:hover .ic{background:var(--fir);color:var(--amber)}
+.icard h3{font-size:1.2rem;margin-bottom:10px}
+.icard ul{list-style:none;font-size:.93rem;color:#4a5048}
+.icard li{display:flex;gap:9px;padding:3px 0}
+.icard li i{color:var(--moss);font-size:.8rem;margin-top:6px}
+.forsale{margin-top:16px;background:var(--canvas);border-radius:var(--r-md);padding:18px 22px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;font-size:.92rem}
+.forsale b{font-family:var(--head)}
+.forsale span{display:flex;align-items:center;gap:7px}
+.forsale span i{color:var(--ember)}
+
+/* stays */
+.stays{background:var(--canvas)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{border:1.5px solid var(--line);background:var(--white);padding:10px 18px;border-radius:999px;font-weight:600;font-size:.92rem;cursor:pointer;transition:all .3s var(--ease)}
+.filters button:hover{border-color:var(--fir)}
+.filters button.on{background:var(--fir);color:var(--canvas);border-color:var(--fir)}
+.filters button small{opacity:.6;margin-left:4px}
+.site-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.site{background:var(--white);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s,opacity .4s}
+.site:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.site.hide{display:none}
+.site-img{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:pointer;background:var(--line)}
+.site-img img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.site:hover .site-img img{transform:scale(1.06)}
+.site-img .type{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.92);font-size:.75rem;font-weight:700;padding:6px 11px;border-radius:999px;display:flex;gap:6px;align-items:center}
+.site-img .type i{color:var(--ember)}
+.site-img .count{position:absolute;bottom:14px;right:14px;background:rgba(22,34,26,.78);color:#fff;font-size:.78rem;padding:6px 11px;border-radius:999px;display:flex;gap:6px;align-items:center;opacity:0;transform:translateY(8px);transition:all .35s var(--ease)}
+.site:hover .count{opacity:1;transform:none}
+.site-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.site-top{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.site h3{font-size:1.25rem}
+.rate{font-size:.85rem;font-weight:700;white-space:nowrap;display:flex;gap:5px;align-items:center}
+.rate i{color:var(--amber)}
+.rate.new{color:var(--moss)}
+.site p.blurb{font-size:.93rem;color:var(--muted);margin:8px 0 14px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.facts span{font-size:.8rem;background:var(--paper);border:1px solid var(--line);padding:5px 10px;border-radius:8px;display:flex;gap:6px;align-items:center}
+.facts span i{color:var(--moss)}
+.facts span.warn i{color:var(--ember)}
+.site-act{display:flex;gap:10px;margin-top:auto}
+.site-act .btn{flex:1;padding:11px 14px;font-size:.92rem}
+
+/* location */
+.loc-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center}
+.drives{list-style:none;margin-top:28px}
+.drives li{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);transition:padding .3s var(--ease)}
+.drives li:hover{padding-left:8px}
+.drives .ic{width:48px;height:48px;border-radius:12px;background:var(--canvas);display:grid;place-items:center;color:var(--ember);font-size:1.1rem}
+.drives b{display:block}
+.drives small{color:var(--muted);font-size:.86rem}
+.drives em{font-style:normal;font-family:var(--head);font-weight:800;font-size:1.3rem;color:var(--forest)}
+.map{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:5/4;box-shadow:var(--shadow);position:relative}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.75)}
+.map .pin{position:absolute;left:16px;bottom:16px;background:var(--white);padding:10px 14px;border-radius:var(--r-sm);font-size:.85rem;display:flex;gap:8px;align-items:center;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.map .pin i{color:var(--ember)}
+
+/* reviews */
+.reviews{background:var(--fir);color:var(--canvas);overflow:hidden}
+.reviews .eyebrow{color:var(--sage)}
+.score{display:flex;align-items:center;gap:18px}
+.score b{font-family:var(--head);font-size:4rem;font-weight:800;color:var(--amber);line-height:1}
+.score .stars{color:var(--amber)}
+.score small{opacity:.75;display:block}
+.rv-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--moss) transparent}
+.rcard{flex:0 0 min(380px,85%);scroll-snap-align:start;background:var(--forest);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;transition:background .3s,transform .4s var(--ease)}
+.rcard:hover{background:#2f4532;transform:translateY(-4px)}
+.rcard .q{color:var(--amber);font-size:1.4rem;margin-bottom:12px}
+.rcard p{font-size:1rem;flex:1}
+.rcard .who{display:flex;align-items:center;gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
+.rcard .av{width:40px;height:40px;border-radius:50%;background:var(--amber);color:var(--fir);display:grid;place-items:center;font-weight:700;font-size:.85rem}
+.rcard .who small{display:block;opacity:.65;font-size:.8rem}
+.rv-nav{display:flex;gap:10px}
+.rv-nav button{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:none;color:var(--canvas);cursor:pointer;transition:all .3s}
+.rv-nav button:hover{background:var(--amber);color:var(--fir);border-color:var(--amber)}
+
+/* host */
+.host-card{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;background:var(--canvas);border-radius:28px;padding:48px}
+.host-av{width:150px;height:150px;border-radius:50%;overflow:hidden;border:6px solid var(--white);box-shadow:var(--shadow);background:var(--amber);display:grid;place-items:center;font-family:var(--head);font-size:3rem;font-weight:800;color:var(--fir);position:relative}
+.host-av img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.badge{display:inline-flex;align-items:center;gap:7px;background:var(--fir);color:var(--amber);font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;margin-bottom:12px}
+.host-card h2{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:12px}
+.host-card p{color:#4a5048;max-width:560px}
+.host-facts{display:flex;flex-direction:column;gap:12px;min-width:210px}
+.host-facts div{background:var(--white);border-radius:var(--r-md);padding:14px 18px;display:flex;gap:12px;align-items:center;font-size:.92rem}
+.host-facts i{color:var(--ember);width:18px;text-align:center}
+.host-facts b{display:block;font-family:var(--head);font-size:1.1rem}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:1.06rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:34px;height:34px;flex:none;border-radius:50%;background:var(--canvas);display:grid;place-items:center;transition:transform .35s var(--ease),background .3s}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--amber)}
+.faq summary:hover{color:var(--ember)}
+.faq .ans{padding:0 50px 22px 0;color:#4a5048;animation:drop .4s var(--ease)}
+@keyframes drop{from{opacity:0;transform:translateY(-6px)}}
+
+/* booking */
+.book{background:var(--canvas)}
+.book-grid{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:var(--white)}
+.book-side{background:var(--fir);color:var(--canvas);padding:44px 40px;display:flex;flex-direction:column}
+.book-side .eyebrow{color:var(--sage)}
+.book-side h2{font-size:clamp(1.9rem,3vw,2.5rem);margin:14px 0}
+.book-side p{opacity:.8}
+.from{margin:26px 0;padding:18px 20px;border-radius:var(--r-md);background:rgba(255,255,255,.06);display:flex;align-items:baseline;gap:8px}
+.from b{font-family:var(--head);font-size:2.4rem;color:var(--amber);line-height:1}
+.from span{opacity:.75;font-size:.92rem}
+.book-side ul{list-style:none;display:grid;gap:12px;font-size:.94rem;margin-top:auto}
+.book-side li{display:flex;gap:12px}
+.book-side li i{color:var(--amber);margin-top:4px}
+.book-form{padding:40px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fgrid .full{grid-column:1/-1}
+.fld label{display:block;font-size:.8rem;font-weight:700;margin-bottom:6px;color:#3c4239}
+.fld input,.fld select,.fld textarea{width:100%;border:1.5px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;background:var(--paper);transition:border-color .25s,background .25s,box-shadow .25s}
+.fld textarea{resize:vertical;min-height:80px}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--moss);background:#fff;box-shadow:0 0 0 4px rgba(93,108,68,.14)}
+.fld.err input,.fld.err select{border-color:var(--ember);background:#fff6f0}
+.fld .msg{font-size:.78rem;color:var(--ember);margin-top:5px;display:none}
+.fld.err .msg{display:block}
+.fld .hint{font-size:.78rem;color:var(--muted);margin-top:5px}
+.stepper{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:var(--r-sm);background:var(--paper);overflow:hidden}
+.stepper button{width:46px;height:46px;border:none;background:none;cursor:pointer;font-size:.9rem;transition:background .2s}
+.stepper button:hover:not(:disabled){background:var(--canvas)}
+.stepper button:disabled{opacity:.3;cursor:not-allowed}
+.stepper output{flex:1;text-align:center;font-weight:700}
+.summary{grid-column:1/-1;background:var(--canvas);border-radius:var(--r-md);padding:14px 18px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:.9rem;align-items:center}
+.summary span{display:flex;gap:7px;align-items:center}
+.summary i{color:var(--moss)}
+.summary .est{margin-left:auto;font-weight:700;font-family:var(--head);font-size:1.05rem}
+.book-form .btn{width:100%;margin-top:6px;padding:16px}
+.note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:10px}
+.done{display:none;text-align:center;padding:40px 10px}
+.done.show{display:block;animation:drop .5s var(--ease)}
+.done .ok{width:72px;height:72px;border-radius:50%;background:var(--moss);color:#fff;font-size:1.8rem;display:grid;place-items:center;margin:0 auto 18px}
+.done h3{font-size:1.8rem;margin-bottom:8px}
+.done p{color:var(--muted);max-width:380px;margin:0 auto 22px}
+
+/* footer */
+footer{background:var(--fir);color:rgba(243,237,225,.75);padding:70px 0 30px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .logo b{color:var(--canvas)}
+footer .logo small{color:var(--sage)}
+footer .logo-mark{background:var(--amber);color:var(--fir)}
+footer h4{color:var(--canvas);font-size:1.05rem;margin-bottom:16px}
+footer ul{list-style:none;display:grid;gap:9px;font-size:.93rem}
+footer ul a{transition:color .25s,padding .25s}
+footer ul a:hover{color:var(--amber);padding-left:4px}
+footer li i{color:var(--amber);width:20px}
+.f-about{font-size:.93rem;margin-top:16px;max-width:300px}
+.copy{text-align:center;padding-top:26px;font-size:.85rem}
+
+/* sticky mobile book */
+.mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--fir);color:var(--canvas);border-radius:var(--r-md);padding:10px 10px 10px 18px;align-items:center;justify-content:space-between;box-shadow:var(--shadow);transform:translateY(140%);transition:transform .45s var(--ease)}
+.mbar.show{transform:none}
+.mbar b{color:var(--amber);font-family:var(--head);font-size:1.2rem}
+.mbar .btn{padding:11px 18px}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(14,22,16,.72);backdrop-filter:blur(4px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.modal.open{opacity:1;visibility:visible}
+.mbox{background:var(--white);border-radius:24px;width:min(1040px,100%);max-height:92vh;overflow:auto;display:grid;grid-template-columns:1.15fr 1fr;transform:translateY(24px) scale(.97);transition:transform .45s var(--ease)}
+.modal.open .mbox{transform:none}
+.m-gal{position:relative;background:var(--fir);min-height:420px}
+.m-gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.m-gal img.on{opacity:1}
+.m-gal .arw{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,.92);cursor:pointer;z-index:2;transition:background .25s}
+.m-gal .arw:hover{background:var(--amber)}
+.m-gal .prev{left:14px}.m-gal .next{right:14px}
+.m-dots{position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:2}
+.m-dots button{width:10px;height:10px;border-radius:999px;border:none;background:rgba(255,255,255,.55);cursor:pointer;transition:width .3s,background .3s}
+.m-dots button.on{width:28px;background:var(--amber)}
+.m-info{padding:34px 32px;display:flex;flex-direction:column}
+.m-close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:none;background:var(--white);cursor:pointer;z-index:3;box-shadow:0 4px 12px rgba(0,0,0,.2);font-size:1.05rem}
+.m-info h3{font-size:1.9rem;margin:10px 0 6px}
+.m-info .sub{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+.m-info p{font-size:.95rem;color:#4a5048;margin-bottom:16px}
+.m-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;font-size:.88rem;margin-bottom:22px}
+.m-list li{display:flex;gap:8px}
+.m-list i{color:var(--moss);margin-top:4px;width:16px}
+.m-list li.no i{color:var(--ember)}
+.m-info .btn{margin-top:auto}
+
+/* responsive */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr}
+  .packcard{left:16px;bottom:16px}
+  .quick form{grid-template-columns:1fr 1fr}
+  .qf{border-right:none;border-bottom:1px solid var(--line)}
+  .quick form .btn{grid-column:1/-1;margin:8px 0 0}
+  .stats-grid{grid-template-columns:repeat(3,1fr);row-gap:30px}
+  .site-grid{grid-template-columns:1fr 1fr}
+  .incl-grid,.loc-grid,.faq-grid{grid-template-columns:1fr}
+  .incl-photo{position:relative;top:0;aspect-ratio:16/10}
+  .host-card{grid-template-columns:auto 1fr}
+  .host-facts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+  .host-facts div{flex:1;min-width:180px}
+  .book-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .nav-links,.nav .btn{display:none}
+  .burger{display:grid;place-items:center}
+  .mbox{grid-template-columns:1fr}
+  .m-gal{min-height:300px}
+  .mbar{display:flex}
+}
+@media (max-width:640px){
+  .sec{padding:80px 0}
+  .wrap{width:calc(100% - 32px)}
+  .hero{padding-top:110px}
+  .mosaic{grid-template-rows:170px 170px;gap:10px}
+  .packcard{position:relative;left:0;bottom:0;width:auto;margin-top:14px;grid-column:1/-1;animation:none}
+  .mosaic{grid-template-rows:170px 170px auto}
+  .quick form{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .site-grid,.incl-cards{grid-template-columns:1fr}
+  .host-card{grid-template-columns:1fr;padding:30px 24px;text-align:center}
+  .host-av{margin:0 auto}
+  .host-card p{margin-inline:auto}
+  .fgrid{grid-template-columns:1fr}
+  .book-form,.book-side{padding:30px 22px}
+  .m-list{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .summary .est{margin-left:0;width:100%}
+  footer{padding-bottom:100px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv,body,img.fi{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="All Provided Camping home">
+      <span class="logo-mark"><i class="fa-solid fa-campground"></i></span>
+      <span><b>All Provided</b><small>Stress Free Camping</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#included">What's included</a>
+      <a href="#stays">Sites</a>
+      <a href="#location">Location</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">Good to know</a>
+    </nav>
+    <a href="#book" class="btn btn-dark"><i class="fa-regular fa-calendar-check"></i> Book now</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<div class="mob-menu" id="mobMenu" aria-hidden="true">
+  <div class="top">
+    <span class="logo"><span class="logo-mark" style="background:var(--amber);color:var(--fir)"><i class="fa-solid fa-campground"></i></span><span><b>All Provided</b></span></span>
+    <button class="close" id="menuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <nav>
+    <a href="#included">What's included</a>
+    <a href="#stays">Sites</a>
+    <a href="#location">Location</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#host">Your host</a>
+    <a href="#faq">Good to know</a>
+  </nav>
+  <a href="#book" class="btn btn-amber">Book your stay <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="eyebrow"><i class="fa-solid fa-mountain-sun"></i> 15 minutes from Mount Rainier</span>
+      <h1>Just bring food. <em>We set up</em> everything else.</h1>
+      <p class="hero-lead">Wake up to birdsong on 17 wooded acres in Ashford, Washington. Your tent, beds, warm bedding, stove, grill, hammock and heater are ready the moment you arrive.</p>
+      <div class="hero-ctas">
+        <a href="#book" class="btn btn-amber">Book your stay <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#stays" class="btn btn-line"><i class="fa-solid fa-tent"></i> See the 12 sites</a>
+      </div>
+      <div class="proof">
+        <span><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> <b>98%</b> recommend</span>
+        <span class="dot"></span>
+        <span><i class="fa-solid fa-award" style="color:var(--ember)"></i> Star Host</span>
+        <span class="dot"></span>
+        <span><i class="fa-solid fa-paw" style="color:var(--moss)"></i> Pets welcome</span>
+      </div>
+    </div>
+
+    <div class="mosaic rv">
+      <figure><img src="https://dxynby2r8cy0b.cloudfront.net/images/f_auto,c_limit,w_1920,q_auto/v1751087912/land-photos/uzncrqemkxbugrks5ya4/all-provided-stress-free-camping-mount-rainier.jpg" alt="Campsite tents among tall evergreen trees"></figure>
+      <figure><img src="https://dxynby2r8cy0b.cloudfront.net/images/f_auto,c_limit,w_1920,q_auto/v1750612439/dev-campground-photos/ssejk0gbdjh8zitkt20y/all-provided-stress-free-camping-yuliya-s-yurt-tent-site-mount-rainier.jpg" alt="Furnished glamping tent with queen bed"></figure>
+      <figure><img src="https://dxynby2r8cy0b.cloudfront.net/images/f_auto,c_limit,w_1920,q_auto/v1750095516/dev-campground-photos/wstiap7sag2flrj4b7kx/all-provided-stress-free-camping-ruby-camping-site-by-mt-rainier-mount-rainier.jpg" alt="Campsite setup with chairs and fire pit"></figure>
+      <div class="packcard" id="packcard">
+        <h4><i class="fa-solid fa-list-check"></i> Your packing list</h4>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> Food</li>
+          <li><i class="fa-solid fa-circle-check"></i> Drinking water</li>
+          <li><i class="fa-solid fa-circle-check"></i> Ice for the cooler</li>
+          <li><i class="fa-solid fa-circle-check"></i> Charcoal for the BBQ</li>
+        </ul>
+        <p>That's it. Everything else is waiting at your site.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- quick availability bar -->
+  <div class="wrap quick">
+    <form id="quickForm" aria-label="Quick availability search">
+      <div class="qf">
+        <label for="qSite"><i class="fa-solid fa-tent"></i> Site</label>
+        <select id="qSite"><option value="">Any site</option></select>
+      </div>
+      <div class="qf">
+        <label for="qIn"><i class="fa-regular fa-calendar"></i> Check in</label>
+        <input type="date" id="qIn">
+      </div>
+      <div class="qf">
+        <label for="qOut"><i class="fa-regular fa-calendar"></i> Check out</label>
+        <input type="date" id="qOut">
+      </div>
+      <div class="qf">
+        <label for="qGuests"><i class="fa-solid fa-user-group"></i> Guests</label>
+        <select id="qGuests"></select>
+      </div>
+      <button class="btn btn-amber" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Check availability</button>
+    </form>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" aria-label="At a glance">
+  <div class="wrap stats-grid">
+    <div class="stat rv"><b data-count="12">0</b><span>Ready to use sites</span></div>
+    <div class="stat rv"><b data-count="17">0</b><span>Acres of forest</span></div>
+    <div class="stat rv"><b><span data-count="15">0</span><small>min</small></b><span>To Nisqually Entrance</span></div>
+    <div class="stat rv"><b><span data-count="5">0</span><small>min</small></b><span>To Alder Lake</span></div>
+    <div class="stat rv"><b><span data-count="98">0</span><small>%</small></b><span>Guests recommend</span></div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section class="sec" id="included">
+  <div class="wrap incl-grid">
+    <div class="incl-photo rv">
+      <img src="https://dxynby2r8cy0b.cloudfront.net/images/f_auto,c_limit,w_1920,q_auto/v1751049810/dev-campground-photos/jbdmf2etffziiqntdnft/all-provided-stress-free-camping-coleman-tent-site-mount-rainier.jpg" alt="A fully equipped tent site ready for guests" loading="lazy">
+      <div class="tag"><b>No gear? No problem.</b>Perfect for first timers, families and anyone flying in to see Rainier.</div>
+    </div>
+    <div>
+      <span class="eyebrow rv"><i class="fa-solid fa-box-open"></i> Truly all provided</span>
+      <h2 class="rv" style="margin-top:12px">Skip the packing. Keep the campfire.</h2>
+      <div class="bring rv" aria-label="What to bring">
+        <span><i class="fa-solid fa-utensils"></i> Food</span>
+        <span><i class="fa-solid fa-bottle-water"></i> Water</span>
+        <span><i class="fa-solid fa-cube"></i> Ice</span>
+        <span><i class="fa-solid fa-fire"></i> Charcoal</span>
+      </div>
+      <div class="incl-cards">
+        <article class="icard rv">
+          <div class="ic"><i class="fa-solid fa-bed"></i></div>
+          <h3>Inside your tent</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> 18" queen mattress, plush pad, sheets, pillows, blankets</li>
+            <li><i class="fa-solid fa-check"></i> Cot for luggage or a small extra sleeper</li>
+            <li><i class="fa-solid fa-check"></i> Fan and 300W power station</li>
+            <li><i class="fa-solid fa-check"></i> Flashlight, bug spray, sanitizer</li>
+          </ul>
+        </article>
+        <article class="icard rv">
+          <div class="ic"><i class="fa-solid fa-fire-burner"></i></div>
+          <h3>Around your site</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Charcoal BBQ with utensils and lighter</li>
+            <li><i class="fa-solid fa-check"></i> Smokeless fire pit and camp chairs</li>
+            <li><i class="fa-solid fa-check"></i> Cooking stove and propane heater</li>
+            <li><i class="fa-solid fa-check"></i> Hammock for two, canopy, bright site light</li>
+          </ul>
+        </article>
+        <article class="icard rv">
+          <div class="ic"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3>Shared camp kitchen</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Sink, running water and electricity</li>
+            <li><i class="fa-solid fa-check"></i> Dishes, pots, pans and a carry basket</li>
+            <li><i class="fa-solid fa-check"></i> Free coffee, tea and hot chocolate</li>
+            <li><i class="fa-solid fa-check"></i> Kettle, toaster, microwave, waffle maker</li>
+          </ul>
+        </article>
+        <article class="icard rv">
+          <div class="ic"><i class="fa-solid fa-wifi"></i></div>
+          <h3>Little extras</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Starlink Wi-Fi and strong cell signal</li>
+            <li><i class="fa-solid fa-check"></i> Towels, shampoo, soap, toothbrush</li>
+            <li><i class="fa-solid fa-check"></i> Aurora star projector at select sites</li>
+            <li><i class="fa-solid fa-check"></i> Clean on site toilets, serviced weekly</li>
+          </ul>
+        </article>
+      </div>
+      <div class="forsale rv">
+        <b>Sold on site:</b>
+        <span><i class="fa-solid fa-tree"></i> Firewood from $5</span>
+        <span><i class="fa-solid fa-gas-pump"></i> Propane $10</span>
+        <span><i class="fa-solid fa-droplet"></i> Lighter fluid $10</span>
+        <span><i class="fa-solid fa-fire"></i> Charcoal $15</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAYS -->
+<section class="sec stays" id="stays">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv"><i class="fa-solid fa-tent"></i> Choose your site</span>
+        <h2 class="rv" style="margin-top:12px">12 sites, from cozy for two<br>to camps for ten.</h2>
+      </div>
+      <div class="filters rv" role="tablist" aria-label="Filter sites">
+        <button class="on" data-f="all">All <small>12</small></button>
+        <button data-f="tent">Tent sites <small>6</small></button>
+        <button data-f="lodge">Canvas lodging <small>6</small></button>
+        <button data-f="group">Groups 6+</button>
+        <button data-f="two">For two</button>
+      </div>
+    </div>
+    <div class="site-grid" id="siteGrid"></div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="sec" id="location">
+  <div class="wrap loc-grid">
+    <div>
+      <span class="eyebrow rv"><i class="fa-solid fa-location-dot"></i> Ashford, Washington</span>
+      <h2 class="rv" style="margin-top:12px">Right on the road to Rainier.</h2>
+      <p class="rv" style="color:var(--muted);margin-top:14px;max-width:460px">Close enough for an early start in the park, quiet enough to hear the forest at night.</p>
+      <ul class="drives">
+        <li class="rv"><span class="ic"><i class="fa-solid fa-mountain"></i></span><div><b>Mount Rainier, Nisqually Entrance</b><small>Tip: get in before 10 am to beat traffic</small></div><em>15 min</em></li>
+        <li class="rv"><span class="ic"><i class="fa-solid fa-water"></i></span><div><b>Alder Lake</b><small>Swimming and amazing sunsets</small></div><em>5 min</em></li>
+        <li class="rv"><span class="ic"><i class="fa-solid fa-shower"></i></span><div><b>Alder Lake Park showers</b><small>Open 8 am to 9 pm, $1 per 12 minutes</small></div><em>13 min</em></li>
+        <li class="rv"><span class="ic"><i class="fa-solid fa-gas-pump"></i></span><div><b>Gas station and store</b><small>Ice, snacks and supplies</small></div><em>3 min</em></li>
+        <li class="rv"><span class="ic"><i class="fa-solid fa-burger"></i></span><div><b>Local restaurants</b><small>Including the train caboose diners in Elbe</small></div><em>3 to 5 min</em></li>
+      </ul>
+    </div>
+    <div class="map rv">
+      <iframe title="Map of Ashford, Washington" loading="lazy" src="https://www.google.com/maps?q=Ashford,+WA+98304&z=11&output=embed"></iframe>
+      <div class="pin"><i class="fa-solid fa-lock"></i> Exact address shared after booking</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv"><i class="fa-solid fa-heart"></i> Guest stories</span>
+        <h2 class="rv" style="margin-top:12px">They came without gear.<br>They left planning a return.</h2>
+      </div>
+      <div style="display:flex;gap:30px;align-items:center;flex-wrap:wrap">
+        <div class="score rv"><b>98%</b><div><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><small>40 ratings, 28 reviews</small></div></div>
+        <div class="rv-nav rv"><button id="rvPrev" aria-label="Previous reviews"><i class="fa-solid fa-arrow-left"></i></button><button id="rvNext" aria-label="Next reviews"><i class="fa-solid fa-arrow-right"></i></button></div>
+      </div>
+    </div>
+    <div class="rv-track" id="rvTrack"></div>
+  </div>
+</section>
+
+<!-- HOST -->
+<section class="sec" id="host">
+  <div class="wrap">
+    <div class="host-card rv">
+      <div class="host-av">Y<img src="https://dxynby2r8cy0b.cloudfront.net/image/upload/c_fill,f_auto,h_300,w_300/v1721785806/profile/nyohaiehzacqvbn1lxd5.jpg" alt="Yuliya, your host" onerror="this.remove()"></div>
+      <div>
+        <span class="badge"><i class="fa-solid fa-award"></i> Star Host</span>
+        <h2>Hi, I'm Yuliya.</h2>
+        <p>My family and I live right here on the property, so help is always a short walk away. I set up every tent myself, keep the kitchen stocked with coffee and treats, and I'm happy to share my favorite trails, swimming spots and a quiet path down to the river. Say hi to our free roaming bunnies too!</p>
+      </div>
+      <div class="host-facts">
+        <div><i class="fa-solid fa-reply"></i><span><b>100%</b>Response rate</span></div>
+        <div><i class="fa-solid fa-house-chimney"></i><span><b>On site</b>Lives on the property</span></div>
+        <div><i class="fa-solid fa-calendar"></i><span><b>Since 2024</b>Hosting campers</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="padding-top:0">
+  <div class="wrap faq-grid">
+    <div>
+      <span class="eyebrow rv"><i class="fa-solid fa-circle-info"></i> Good to know</span>
+      <h2 class="rv" style="margin-top:12px">Before you arrive.</h2>
+      <p class="rv" style="color:var(--muted);margin-top:14px">Quick answers to what guests ask most. Anything else, just add a note to your booking request.</p>
+    </div>
+    <div class="faq">
+      <details class="rv"><summary>What are the bathrooms and showers like? <span class="pm"><i class="fa-solid fa-plus"></i></span></summary><div class="ans">Each area has clean on site portable toilets, serviced weekly and looked after daily. Hot showers are at Alder Lake Park, about 13 minutes away (open 8 am to 9 pm, $1 per 12 minutes). We give you towels, shampoo, conditioner and soap to take along.</div></details>
+      <details class="rv"><summary>Will I have internet? <span class="pm"><i class="fa-solid fa-plus"></i></span></summary><div class="ans">Yes. Starlink Wi-Fi is available and cell service is excellent here, with guests reporting strong signal on AT&amp;T and T-Mobile.</div></details>
+      <details class="rv"><summary>Are pets allowed? <span class="pm"><i class="fa-solid fa-plus"></i></span></summary><div class="ans">Yes, every site is pet friendly. Please keep pets close, as bunnies roam the property.</div></details>
+      <details class="rv"><summary>Can we have a campfire? <span class="pm"><i class="fa-solid fa-plus"></i></span></summary><div class="ans">Campfires are allowed at every site except the Road Corner Tent Site. Each site has a smokeless fire pit and firewood is sold on site.</div></details>
+      <details class="rv"><summary>Will it be cold at night? <span class="pm"><i class="fa-solid fa-plus"></i></span></summary><div class="ans">Every site has warm blankets and a propane heater. Propane is $10 on site, or bring your own small green canister.</div></details>
+      <details class="rv"><summary>Which sites are near the road? <span class="pm"><i class="fa-solid fa-plus"></i></span></summary><div class="ans">The Road Corner Tent Site and the Simple but Cozy Tent for Two sit close to the main road, so you will hear passing cars. We provide earplugs. Light sleepers should pick Stargazers Corner or Family Gathering Grounds for the most privacy.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="sec book" id="book">
+  <div class="wrap">
+    <div class="book-grid rv">
+      <aside class="book-side">
+        <span class="eyebrow"><i class="fa-regular fa-calendar-check"></i> Reserve your site</span>
+        <h2>Your tent is ready when you are.</h2>
+        <p>Send a request and Yuliya will confirm availability and your exact rate, usually within a few hours.</p>
+        <div class="from"><span>From</span><b>$80</b><span>per night</span></div>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> Everything set up before you arrive</li>
+          <li><i class="fa-solid fa-circle-check"></i> Pets welcome at every site</li>
+          <li><i class="fa-solid fa-circle-check"></i> Parking right at your site</li>
+          <li><i class="fa-solid fa-circle-check"></i> Host lives on site for help any time</li>
+        </ul>
+      </aside>
+
+      <div class="book-form">
+        <form id="bookForm" novalidate>
+          <div class="fgrid">
+            <div class="fld full">
+              <label for="bSite">Site</label>
+              <select id="bSite" required><option value="">Choose a site</option></select>
+              <div class="msg">Please choose a site.</div>
+            </div>
+            <div class="fld">
+              <label for="bIn">Check in</label>
+              <input type="date" id="bIn" required>
+              <div class="msg">Choose a check in date.</div>
+            </div>
+            <div class="fld">
+              <label for="bOut">Check out</label>
+              <input type="date" id="bOut" required>
+              <div class="msg">Check out must be after check in.</div>
+            </div>
+            <div class="fld">
+              <label>Guests</label>
+              <div class="stepper">
+                <button type="button" id="gMinus" aria-label="Fewer guests"><i class="fa-solid fa-minus"></i></button>
+                <output id="gCount" aria-live="polite">2</output>
+                <button type="button" id="gPlus" aria-label="More guests"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="hint" id="gHint">Pick a site to see how many it sleeps.</div>
+            </div>
+            <div class="fld">
+              <label for="bPets">Bringing pets?</label>
+              <select id="bPets"><option>No pets</option><option>1 pet</option><option>2 pets</option></select>
+            </div>
+            <div class="fld">
+              <label for="bName">Full name</label>
+              <input type="text" id="bName" autocomplete="name" required placeholder="Your name">
+              <div class="msg">Please enter your name.</div>
+            </div>
+            <div class="fld">
+              <label for="bEmail">Email</label>
+              <input type="email" id="bEmail" autocomplete="email" required placeholder="you@email.com">
+              <div class="msg">Please enter a valid email.</div>
+            </div>
+            <div class="fld full">
+              <label for="bNote">Anything we should know? <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+              <textarea id="bNote" placeholder="Arrival time, firewood or propane requests, special occasions..."></textarea>
+            </div>
+            <div class="summary" id="summary">
+              <span><i class="fa-solid fa-tent"></i> <span id="sSite">No site yet</span></span>
+              <span><i class="fa-solid fa-moon"></i> <span id="sNights">0 nights</span></span>
+              <span class="est" id="sEst">From $80 / night</span>
+            </div>
+          </div>
+          <button class="btn btn-amber" type="submit"><i class="fa-solid fa-paper-plane"></i> Send booking request</button>
+          <p class="note"><i class="fa-solid fa-lock"></i> No payment now. Your rate is confirmed before anything is charged.</p>
+        </form>
+
+        <div class="done" id="done" role="status">
+          <div class="ok"><i class="fa-solid fa-check"></i></div>
+          <h3>Request sent!</h3>
+          <p id="doneText">Yuliya will reply soon to confirm your dates.</p>
+          <button class="btn btn-line" id="again"><i class="fa-solid fa-rotate-left"></i> Make another request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#top" class="logo"><span class="logo-mark"><i class="fa-solid fa-campground"></i></span><span><b>All Provided</b><small>Stress Free Camping</small></span></a>
+        <p class="f-about">Fully set up tent camping on 17 forested acres, minutes from Mount Rainier National Park.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#included">What's included</a></li>
+          <li><a href="#stays">Sites</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Plan</h4>
+        <ul>
+          <li><a href="#host">Your host</a></li>
+          <li><a href="#faq">Good to know</a></li>
+          <li><a href="#book">Book a site</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Ashford, Washington 98304</li>
+          <li><i class="fa-solid fa-user"></i> Hosted by Yuliya K.</li>
+          <li><a href="#book"><i class="fa-solid fa-envelope"></i> Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="yr"></span> All Provided Stress Free Camping. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- mobile sticky book bar -->
+<div class="mbar" id="mbar">
+  <span>From <b>$80</b> / night</span>
+  <a href="#book" class="btn btn-amber">Book now</a>
+</div>
+
+<!-- site modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="mbox" style="position:relative">
+    <button class="m-close" id="mClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="m-gal" id="mGal">
+      <button class="arw prev" id="mPrev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="arw next" id="mNext" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="m-dots" id="mDots"></div>
+    </div>
+    <div class="m-info">
+      <span class="eyebrow" id="mType"></span>
+      <h3 id="mTitle"></h3>
+      <div class="sub" id="mSub"></div>
+      <p id="mDesc"></p>
+      <ul class="m-list" id="mList"></ul>
+      <button class="btn btn-amber" id="mBook"><i class="fa-regular fa-calendar-check"></i> Book this site</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const IMG = (p, alt) => p.startsWith('http') ? p : 'https://dxynby2r8cy0b.cloudfront.net/' + p;
+const A = 'images/f_auto,c_limit,w_1920,q_auto/';
+const B = 'f_auto,c_limit,w_1920,q_auto/';
+
+const SITES = [
+  {id:'emerald',name:'Emerald Camping Tent Site',kind:'tent',sleeps:6,rating:'94%',reviews:9,parking:4,fire:true,
+   blurb:'Two separate tents with queen beds, perfect for a family or two couples.',
+   desc:'A roomy two tent setup. Both tents have a queen mattress and a cot for luggage or an extra sleeper, plus a fan, power station and toiletries.',
+   feats:['2 tents, 2 queen beds','4 parking spots','Hammock and BBQ','Heater included'],
+   imgs:[A+'v1750090133/dev-campground-photos/a2c6hexrvo0jg8shnu08/all-provided-stress-free-camping-emerald-camping-tent-site-mount-rainier.jpg',A+'v1750089640/dev-campground-photos/uduvwshwpeq96tbujl4m/all-provided-stress-free-camping-emerald-camping-tent-site-mount-rainier.jpg',A+'v1750089874/dev-campground-photos/h3myzdiwvrkb2udccqng/all-provided-stress-free-camping-emerald-camping-tent-site-mount-rainier.jpg']},
+  {id:'coleman',name:'Coleman Tent Site',kind:'tent',sleeps:3,rating:'100%',reviews:5,parking:2,fire:true,
+   blurb:'A cozy tent for two with a queen bed and a cot for a little one.',
+   desc:'A Coleman tent with an 18" queen mattress and plush bedding, a cot for a third smaller guest, and firewood provided for your first fire.',
+   feats:['1 queen + 1 cot','2 parking spots','Hammock for two','Firewood provided'],
+   imgs:[A+'v1751049927/dev-campground-photos/ynz810yciqosppo4htpw/all-provided-stress-free-camping-coleman-tent-site-mount-rainier.jpg',A+'v1751049795/dev-campground-photos/ugxktcbka5a0m97pgwj5/all-provided-stress-free-camping-coleman-tent-site-mount-rainier.jpg',A+'v1751049809/dev-campground-photos/hzdeihro3nqlfsuot0h6/all-provided-stress-free-camping-coleman-tent-site-mount-rainier.jpg']},
+  {id:'family',name:'Family Gathering Grounds',kind:'tent',sleeps:10,rating:'100%',reviews:5,parking:4,fire:true,
+   blurb:'Three big stand up tents in a quiet, secluded corner of the property.',
+   desc:'Three large tents set apart on one site, tall enough for a 6\'5" guest to stand. Six beds in total with warm bedding, plus a picnic table and canopy.',
+   feats:['3 tents, 6 beds','4 parking spots','Secluded corner','Picnic table and canopy'],
+   imgs:[A+'v1751046746/dev-campground-photos/se0zzwgbhy7mdebylnz3/all-provided-stress-free-camping-family-gathering-grounds-tent-site-mount-rainier.jpg',A+'v1751046739/dev-campground-photos/irvthvcynwc4cyokud7z/all-provided-stress-free-camping-family-gathering-grounds-tent-site-mount-rainier.jpg',A+'v1751046797/dev-campground-photos/mlleql9emrxd0ozld7c6/all-provided-stress-free-camping-family-gathering-grounds-tent-site-mount-rainier.jpg']},
+  {id:'yurt',name:"Yuliya's Yurt Tent Site",kind:'tent',sleeps:2,rating:'100%',reviews:4,parking:2,fire:true,
+   blurb:'A romantic tent for two with soft lighting and a hammock built for two.',
+   desc:'A new tent with an 18" air mattress and cozy bedding, plenty of soft lighting, a cot, and a portable fan with charging station.',
+   feats:['1 queen bed','2 parking spots','Hammock for two','Lots of soft lighting'],
+   imgs:[A+'v1750611122/dev-campground-photos/hkkzl5rdd0pevxgoml7g/all-provided-stress-free-camping-yuliya-s-yurt-tent-site-mount-rainier.jpg',A+'v1750611131/dev-campground-photos/m7ca6r4qakfkx3uy25yy/all-provided-stress-free-camping-yuliya-s-yurt-tent-site-mount-rainier.jpg',A+'v1750611107/dev-campground-photos/e5w6vjk0jzxiskot36yg/all-provided-stress-free-camping-yuliya-s-yurt-tent-site-mount-rainier.jpg']},
+  {id:'ruby',name:'Ruby Camping Site',kind:'tent',sleeps:5,rating:'100%',reviews:3,parking:3,fire:true,
+   blurb:'Two tents with four beds, a family favorite with the kids.',
+   desc:'A large tent with a queen and a twin, plus a smaller tent with two twins. Kids love the northern lights projector at night.',
+   feats:['2 tents, 4 beds','3 parking spots','Firewood provided','Great for kids'],
+   imgs:[A+'v1750096844/dev-campground-photos/gtbhkvttgfo8hcanlcze/all-provided-stress-free-camping-ruby-camping-site-by-mt-rainier-mount-rainier.jpg',A+'v1750095193/dev-campground-photos/fkhrtze0ap796xpqnah2/all-provided-stress-free-camping-ruby-camping-site-by-mt-rainier-mount-rainier.jpg',A+'v1750095196/dev-campground-photos/usi8obzrmfaxioeyn3gt/all-provided-stress-free-camping-ruby-camping-site-by-mt-rainier-mount-rainier.jpg']},
+  {id:'stargazers',name:'Stargazers Corner',kind:'tent',sleeps:8,rating:'100%',reviews:3,parking:3,fire:true,
+   blurb:'Our most private site, with views of Rainier\'s peak at sunrise.',
+   desc:'Tucked in a secluded corner with fairy lights, tiki torches and an aurora star projector with Bluetooth speaker. Two tents, each with two queen beds and a heated mattress pad.',
+   feats:['2 tents, 4 queen beds','3 parking spots','Rainier sunrise views','Very private'],
+   imgs:['images/f_auto,c_limit,w_1920,q_auto/v1786548695/campground-photos/lql8ivinjfv08jhbbucq/all-provided-stress-free-camping-stargazers-corner-8-people-site-mount-rainier.jpg','images/f_auto,c_limit,w_1920,q_auto/v1786548684/campground-photos/wxk3qhjutioddnyibefm/all-provided-stress-free-camping-stargazers-corner-8-people-site-mount-rainier.jpg','images/f_auto,c_limit,w_1920,q_auto/v1786548684/campground-photos/dfy8rlioy06sxrswewq6/all-provided-stress-free-camping-stargazers-corner-8-people-site-mount-rainier.png']},
+  {id:'resort3',name:"Yuliya's Resort, 3 Tents",kind:'lodge',sleeps:10,rating:'100%',reviews:3,parking:4,fire:true,
+   blurb:'A group basecamp with three bedrooms and five beds.',
+   desc:'Canvas tents with queen mattresses and plush bedding for bigger groups. Another tent can be added if needed.',
+   feats:['3 bedrooms, 5 beds','3 to 4 parking spots','Toiletries in tent','Group friendly'],
+   imgs:[B+'v1783704590/dev-campground-photos/fu0ojqd237nockrkwgci.jpg',B+'v1783704611/dev-campground-photos/mta2bgaljyotvyuwfvwm.jpg',B+'v1783704577/dev-campground-photos/cgatxyskterbr19ti3ah.jpg']},
+  {id:'cozy4',name:'Cozy Tent for Four',kind:'lodge',sleeps:4,rating:'100%',reviews:2,parking:2,fire:true,
+   blurb:'A brand new 16 by 9 foot canvas tent with two queen beds.',
+   desc:'Two 18" queen air mattresses with full bedding, a fan, power station and a complete toiletry kit. Outside: a two burner stove, propane BBQ and fire pit.',
+   feats:['2 queen beds','Two burner stove','Propane BBQ','Full toiletry kit'],
+   imgs:[B+'v1784570659/dev-campground-photos/olkpkujpwswpkdpf2mh6.jpg',B+'v1784570497/dev-campground-photos/fzgdfyhhbs32owsbpnb3.png',B+'v1784570496/dev-campground-photos/qnnqfklqx465eofyogau.png']},
+  {id:'roadcorner',name:'Road Corner Tent Site',kind:'lodge',sleeps:2,rating:'100%',reviews:2,parking:1,fire:false,road:true,
+   blurb:'A simple, easy basecamp for early starts in the park.',
+   desc:'One comfy queen bed under a covered awning, warm lighting and a power station. Close to the main road, so earplugs are provided. No campfires at this site.',
+   feats:['1 queen bed','Covered awning','Earplugs provided','No campfires'],
+   imgs:[A+'v1786897012/campground-photos/le2kynvszvpfxmipdj3q/all-provided-stress-free-camping-road-corner-tent-site-mount-rainier.png',A+'v1786896775/campground-photos/k9ottsw2i6egphzvb5pu/all-provided-stress-free-camping-road-corner-tent-site-mount-rainier.png',A+'v1786896958/campground-photos/qzbmboshf10p8buupvdw/all-provided-stress-free-camping-road-corner-tent-site-mount-rainier.png']},
+  {id:'simple2',name:'Simple but Cozy Tent for Two',kind:'lodge',sleeps:2,rating:null,booked:3,parking:1,fire:true,road:true,
+   blurb:'A lighter setup under tall trees with twinkle lights and a fire pit.',
+   desc:'Two twin mattresses with fresh bedding, twinkle lights, a power box, your own fire pit and BBQ grill. Closer to the road, so earplugs are provided.',
+   feats:['2 twin beds','Own fire pit','BBQ grill','Earplugs provided'],
+   imgs:[B+'v1784872907/dev-campground-photos/qzj9gfcw5doexrybjveu.jpg',B+'v1784872981/dev-campground-photos/hw7sc3wpabb2niakqmlb.png',B+'v1784873127/dev-campground-photos/s9bstjblyhczy4ogcpob.jpg']},
+  {id:'two',name:'Tent for Two All Included',kind:'lodge',sleeps:2,rating:'100%',reviews:1,parking:1,fire:true,
+   blurb:'Everything included for two, with twin beds and a hammock.',
+   desc:'Two 18" twin mattresses with plush bedding, a fan, power station and toiletries. Outside: BBQ, fire pit, chairs and a bright site light.',
+   feats:['2 twin beds','1 parking spot','Toiletries included','Picnic table'],
+   imgs:[B+'v1783902062/dev-campground-photos/fzbxkz0ecfkhlfdx4viw.jpg',B+'v1783869620/dev-campground-photos/fei15sa8jaqls19eypct.jpg',B+'v1783869625/dev-campground-photos/qx3klbgr3n28ftyfca0d.jpg']},
+  {id:'resort1',name:"Yuliya's Resort, 1 Tent",kind:'lodge',sleeps:2,rating:null,booked:2,parking:1,fire:true,
+   blurb:'A neat canvas tent with two twin beds, great for friends.',
+   desc:'Two 18" twin mattresses with plush bedding, a fan, 300W power station and a full toiletry kit, plus BBQ, fire pit and chairs outside.',
+   feats:['2 twin beds','1 parking spot','Toiletries included','Picnic table'],
+   imgs:[A+'v1783703203/dev-campground-photos/egnvix0ugyquftpo7klx/all-provided-stress-free-camping-yuliyas-resort-1-tent-2-beds-mount-rainier.jpg',A+'v1787498480/campground-photos/sxusnuh7x4ebtp2mrzrb/all-provided-stress-free-camping-yuliyas-resort-1-tent-2-beds-mount-rainier.png',A+'v1787498481/campground-photos/mnu9ra9rbiy61tbvqfh5/all-provided-stress-free-camping-yuliyas-resort-1-tent-2-beds-mount-rainier.png']}
+];
+
+const REVIEWS = [
+  {t:'Our first time camping, with 5 kids and no gear. The ad said everything was included and it was TRUE. Large tents, warm bedding, great location.',n:'Carol K.',s:"Yuliya's Resort, 3 Tents"},
+  {t:'My youngest and I adored it. We only brought food, clothes and entertainment. We\'re making this a yearly tradition.',n:'Sara B.',s:'Coleman Tent Site'},
+  {t:'My kids\' favorite part was the northern lights nightlight. They asked if we could go back and we definitely will.',n:'Brittney F.',s:'Ruby Camping Site'},
+  {t:'The porta potties were cleaner than some gas station bathrooms. Our site felt secluded and cozy. Exceeded expectations.',n:'Monica T.',s:'Tent for Two All Included'},
+  {t:'Gracious hosts who went above and beyond. She even shared a private spot down to the river for me and my dog.',n:'Cindy M.',s:'Simple but Cozy Tent for Two'},
+  {t:'There are bunnies running free on the property and some are friendly enough to pet. Kitchen even had complimentary treats.',n:'Lindsey R.',s:'Emerald Camping Tent Site'},
+  {t:'After a long day hiking at Paradise, our campsite was so relaxing to come back to. 12/10 would recommend.',n:'Kelly G.',s:'Coleman Tent Site'},
+  {t:'Rained hard the first night and the tents stayed nice and dry. Firewood was cheaper than the gas station.',n:'Robert B.',s:'Emerald Camping Tent Site'}
+];
+
+const $ = s => document.querySelector(s);
+const kindLabel = k => k === 'tent' ? 'Tent site' : 'Canvas lodging';
+
+/* ---------- build site cards ---------- */
+const grid = $('#siteGrid');
+grid.innerHTML = SITES.map(s => `
+  <article class="site rv" data-kind="${s.kind}" data-sleeps="${s.sleeps}">
+    <div class="site-img" data-open="${s.id}" role="button" tabindex="0" aria-label="View photos of ${s.name}">
+      <img src="${IMG(s.imgs[0])}" alt="${s.name}" loading="lazy">
+      <span class="type"><i class="fa-solid ${s.kind==='tent'?'fa-tent':'fa-campground'}"></i> ${kindLabel(s.kind)}</span>
+      <span class="count"><i class="fa-regular fa-images"></i> ${s.imgs.length} photos</span>
+    </div>
+    <div class="site-body">
+      <div class="site-top">
+        <h3>${s.name}</h3>
+        ${s.rating ? `<span class="rate"><i class="fa-solid fa-thumbs-up"></i> ${s.rating} <span style="color:var(--muted);font-weight:500">(${s.reviews})</span></span>` : `<span class="rate new"><i class="fa-solid fa-seedling"></i> Booked ${s.booked}x</span>`}
+      </div>
+      <p class="blurb">${s.blurb}</p>
+      <div class="facts">
+        <span><i class="fa-solid fa-user-group"></i> Sleeps ${s.sleeps}</span>
+        <span><i class="fa-solid fa-car"></i> ${s.parking} parking</span>
+        ${s.fire ? '<span><i class="fa-solid fa-fire"></i> Campfires</span>' : '<span class="warn"><i class="fa-solid fa-ban"></i> No fires</span>'}
+        ${s.road ? '<span class="warn"><i class="fa-solid fa-road"></i> Near road</span>' : ''}
+      </div>
+      <div class="site-act">
+        <button class="btn btn-line" data-open="${s.id}"><i class="fa-regular fa-images"></i> Details</button>
+        <button class="btn btn-amber" data-book="${s.id}">Book</button>
+      </div>
+    </div>
+  </article>`).join('');
+
+/* filters */
+document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.filters button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  const f = b.dataset.f;
+  grid.querySelectorAll('.site').forEach(c => {
+    const k = c.dataset.kind, n = +c.dataset.sleeps;
+    const show = f==='all' || f===k || (f==='group' && n>=6) || (f==='two' && n<=3);
+    c.classList.toggle('hide', !show);
+    if (show) { c.classList.remove('in'); requestAnimationFrame(() => c.classList.add('in')); }
+  });
+}));
+
+/* ---------- selects ---------- */
+function fillSelect(sel){
+  const groups = {tent:'Tent sites',lodge:'Canvas lodging'};
+  Object.entries(groups).forEach(([k,label])=>{
+    const og = document.createElement('optgroup'); og.label = label;
+    SITES.filter(s=>s.kind===k).forEach(s=>{
+      const o = document.createElement('option'); o.value = s.id; o.textContent = `${s.name} (sleeps ${s.sleeps})`; og.appendChild(o);
+    });
+    sel.appendChild(og);
+  });
+}
+fillSelect($('#qSite')); fillSelect($('#bSite'));
+for (let i=1;i<=10;i++){ const o=document.createElement('option'); o.value=i; o.textContent=i+(i===1?' guest':' guests'); if(i===2)o.selected=true; $('#qGuests').appendChild(o); }
+
+/* dates */
+const iso = d => d.toISOString().slice(0,10);
+const today = new Date(); today.setHours(12);
+const tomorrow = new Date(today); tomorrow.setDate(today.getDate()+1);
+['#qIn','#bIn'].forEach(s=>$(s).min = iso(today));
+['#qOut','#bOut'].forEach(s=>$(s).min = iso(tomorrow));
+function linkDates(inSel,outSel){
+  $(inSel).addEventListener('change',()=>{
+    const d = new Date($(inSel).value+'T12:00'); if(isNaN(d)) return;
+    const n = new Date(d); n.setDate(d.getDate()+1);
+    $(outSel).min = iso(n);
+    if(!$(outSel).value || $(outSel).value <= $(inSel).value) $(outSel).value = iso(n);
+    updateSummary();
+  });
+}
+linkDates('#qIn','#qOut'); linkDates('#bIn','#bOut');
+
+/* ---------- booking form ---------- */
+let guests = 2;
+const getSite = id => SITES.find(s=>s.id===id);
+function maxGuests(){ const s = getSite($('#bSite').value); return s ? s.sleeps : 10; }
+function renderGuests(){
+  const m = maxGuests(); if (guests>m) guests=m;
+  $('#gCount').textContent = guests;
+  $('#gMinus').disabled = guests<=1; $('#gPlus').disabled = guests>=m;
+  const s = getSite($('#bSite').value);
+  $('#gHint').textContent = s ? `This site sleeps up to ${s.sleeps}.` : 'Pick a site to see how many it sleeps.';
+}
+$('#gMinus').onclick = ()=>{ guests--; renderGuests(); };
+$('#gPlus').onclick = ()=>{ guests++; renderGuests(); };
+
+function nights(){
+  const a = $('#bIn').value, b = $('#bOut').value; if(!a||!b) return 0;
+  return Math.max(0, Math.round((new Date(b) - new Date(a))/864e5));
+}
+function updateSummary(){
+  const s = getSite($('#bSite').value), n = nights();
+  $('#sSite').textContent = s ? s.name : 'No site yet';
+  $('#sNights').textContent = n + (n===1?' night':' nights');
+  $('#sEst').textContent = n ? `Est. from $${(n*80).toLocaleString()}` : 'From $80 / night';
+}
+$('#bSite').addEventListener('change',()=>{ renderGuests(); updateSummary(); clearErr($('#bSite')); });
+$('#bOut').addEventListener('change', updateSummary);
+renderGuests();
+
+function setErr(el,on){ el.closest('.fld').classList.toggle('err',on); }
+function clearErr(el){ setErr(el,false); }
+document.querySelectorAll('#bookForm input,#bookForm select').forEach(el=>el.addEventListener('input',()=>clearErr(el)));
+
+function preselect(id){
+  $('#bSite').value = id; renderGuests(); updateSummary(); clearErr($('#bSite'));
+  document.getElementById('book').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  setTimeout(()=>$('#bIn').focus({preventScroll:true}), 700);
+}
+
+$('#bookForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  let ok = true, first = null;
+  const chk = (el,cond)=>{ setErr(el,!cond); if(!cond){ ok=false; first = first||el; } };
+  chk($('#bSite'), !!$('#bSite').value);
+  chk($('#bIn'), !!$('#bIn').value);
+  chk($('#bOut'), !!$('#bOut').value && nights()>0);
+  chk($('#bName'), $('#bName').value.trim().length>1);
+  chk($('#bEmail'), /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#bEmail').value.trim()));
+  if(!ok){ first.focus(); return; }
+  const s = getSite($('#bSite').value), n = nights();
+  const fmt = v => new Date(v+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
+  $('#doneText').textContent = `Thanks ${$('#bName').value.trim().split(' ')[0]}! Your request for ${s.name}, ${fmt($('#bIn').value)} to ${fmt($('#bOut').value)} (${n} ${n===1?'night':'nights'}, ${guests} ${guests===1?'guest':'guests'}) is on its way. Yuliya will reply to ${$('#bEmail').value.trim()} to confirm.`;
+  $('#bookForm').style.display='none'; $('#done').classList.add('show');
+});
+$('#again').onclick = ()=>{ $('#bookForm').reset(); guests=2; renderGuests(); updateSummary(); $('#done').classList.remove('show'); $('#bookForm').style.display=''; };
+
+/* quick bar -> booking */
+$('#quickForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  if($('#qSite').value) $('#bSite').value = $('#qSite').value;
+  if($('#qIn').value) $('#bIn').value = $('#qIn').value;
+  if($('#qOut').value) $('#bOut').value = $('#qOut').value;
+  guests = +$('#qGuests').value; renderGuests(); updateSummary();
+  document.getElementById('book').scrollIntoView({behavior:'smooth'});
+});
+
+/* ---------- modal ---------- */
+const modal = $('#modal'); let cur = null, idx = 0, lastFocus = null;
+function openModal(id){
+  cur = getSite(id); idx = 0; lastFocus = document.activeElement;
+  const gal = $('#mGal'); gal.querySelectorAll('img').forEach(i=>i.remove());
+  cur.imgs.forEach((p,i)=>{ const im = new Image(); im.src = IMG(p); im.alt = `${cur.name} photo ${i+1}`; if(i===0) im.classList.add('on'); gal.prepend(im); });
+  $('#mDots').innerHTML = cur.imgs.map((_,i)=>`<button aria-label="Photo ${i+1}" class="${i===0?'on':''}"></button>`).join('');
+  $('#mDots').querySelectorAll('button').forEach((b,i)=>b.onclick=()=>show(i));
+  $('#mType').innerHTML = `<i class="fa-solid ${cur.kind==='tent'?'fa-tent':'fa-campground'}"></i> ${kindLabel(cur.kind)}`;
+  $('#mTitle').textContent = cur.name;
+  $('#mSub').innerHTML = `<i class="fa-solid fa-user-group"></i> Sleeps ${cur.sleeps} &nbsp; ${cur.rating ? `<i class="fa-solid fa-thumbs-up" style="color:var(--amber)"></i> ${cur.rating} from ${cur.reviews} ${cur.reviews===1?'review':'reviews'}` : `<i class="fa-solid fa-seedling"></i> New site, booked ${cur.booked} times`}`;
+  $('#mDesc').textContent = cur.desc;
+  const base = [['fa-bed',cur.feats[0]],...cur.feats.slice(1).map(f=>[f.startsWith('No')?'fa-ban':'fa-check',f]),['fa-paw','Pets allowed'],['fa-faucet-drip','Potable water'],['fa-toilet','On site toilet'],[cur.fire?'fa-fire':'fa-ban',cur.fire?'Campfires allowed':'No campfires']];
+  const seen = new Set();
+  $('#mList').innerHTML = base.filter(([,t])=>!seen.has(t)&&seen.add(t)).map(([i,t])=>`<li class="${i==='fa-ban'?'no':''}"><i class="fa-solid ${i}"></i> ${t}</li>`).join('');
+  modal.classList.add('open'); document.body.style.overflow='hidden';
+  $('#mClose').focus();
+}
+function show(i){
+  const imgs = [...$('#mGal').querySelectorAll('img')].reverse();
+  idx = (i + imgs.length) % imgs.length;
+  imgs.forEach((im,k)=>im.classList.toggle('on',k===idx));
+  $('#mDots').querySelectorAll('button').forEach((b,k)=>b.classList.toggle('on',k===idx));
+}
+function closeModal(){ modal.classList.remove('open'); document.body.style.overflow=''; lastFocus && lastFocus.focus(); }
+$('#mPrev').onclick = ()=>show(idx-1); $('#mNext').onclick = ()=>show(idx+1);
+$('#mClose').onclick = closeModal;
+modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
+$('#mBook').onclick = ()=>{ const id = cur.id; closeModal(); preselect(id); };
+document.addEventListener('keydown', e=>{
+  if(!modal.classList.contains('open')) return;
+  if(e.key==='Escape') closeModal();
+  if(e.key==='ArrowLeft') show(idx-1);
+  if(e.key==='ArrowRight') show(idx+1);
+  if(e.key==='Tab'){
+    const f = [...modal.querySelectorAll('button')]; const a=f[0], z=f[f.length-1];
+    if(e.shiftKey && document.activeElement===a){ e.preventDefault(); z.focus(); }
+    else if(!e.shiftKey && document.activeElement===z){ e.preventDefault(); a.focus(); }
+  }
+});
+grid.addEventListener('click', e=>{
+  const o = e.target.closest('[data-open]'), b = e.target.closest('[data-book]');
+  if(o) openModal(o.dataset.open);
+  if(b) preselect(b.dataset.book);
+});
+grid.addEventListener('keydown', e=>{ const o = e.target.closest('.site-img'); if(o && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); openModal(o.dataset.open); }});
+
+/* ---------- reviews ---------- */
+$('#rvTrack').innerHTML = REVIEWS.map(r=>`
+  <article class="rcard"><i class="fa-solid fa-quote-left q"></i><p>${r.t}</p>
+  <div class="who"><span class="av">${r.n.split(' ').map(w=>w[0]).join('').replace('.','')}</span><div><b>${r.n}</b><small>Stayed at ${r.s}</small></div></div></article>`).join('');
+const track = $('#rvTrack');
+const step = ()=> (track.querySelector('.rcard').offsetWidth + 18);
+$('#rvPrev').onclick = ()=>track.scrollBy({left:-step(),behavior:'smooth'});
+$('#rvNext').onclick = ()=>track.scrollBy({left:step(),behavior:'smooth'});
+
+/* ---------- nav, menu, sticky bar ---------- */
+const nav = $('#nav'), mbar = $('#mbar'), bookSec = document.getElementById('book');
+addEventListener('scroll', ()=>{
+  nav.classList.toggle('solid', scrollY>30);
+  const r = bookSec.getBoundingClientRect();
+  mbar.classList.toggle('show', scrollY>600 && !(r.top<innerHeight && r.bottom>0));
+}, {passive:true});
+const menu = $('#mobMenu');
+const toggleMenu = open => { menu.classList.toggle('open',open); menu.setAttribute('aria-hidden',!open); $('#burger').setAttribute('aria-expanded',open); document.body.style.overflow = open?'hidden':''; };
+$('#burger').onclick = ()=>toggleMenu(true);
+$('#menuClose').onclick = ()=>toggleMenu(false);
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+
+/* ---------- reveal + counters ---------- */
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const io = new IntersectionObserver(es=>{
+  const vis = es.filter(en=>en.isIntersecting);
+  vis.forEach((en,i)=>{
+    if(!reduce) en.target.style.transitionDelay = (i*90)+'ms';
+    en.target.classList.add('in'); io.unobserve(en.target);
+    setTimeout(()=>{ en.target.style.transitionDelay=''; }, i*90+1000);
+  });
+},{threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* images fade in as they load */
+document.querySelectorAll('main img:not(.host-av img)').forEach(im=>{
+  im.classList.add('fi');
+  const done = ()=>im.classList.add('ld');
+  if(im.complete && im.naturalWidth) done(); else { im.addEventListener('load',done); im.addEventListener('error',done); }
+});
+requestAnimationFrame(()=>document.body.classList.add('ready'));
+
+const cio = new IntersectionObserver(es=>es.forEach(en=>{
+  if(!en.isIntersecting) return;
+  const el = en.target, end = +el.dataset.count; cio.unobserve(el);
+  if(reduce){ el.textContent = end; return; }
+  const t0 = performance.now();
+  const tick = t => { const p = Math.min(1,(t-t0)/1400); el.textContent = Math.round(end*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+setTimeout(()=>$('#packcard').classList.add('go'), 700);
+$('#yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
